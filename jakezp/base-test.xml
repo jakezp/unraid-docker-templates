@@ -15,16 +15,7 @@
     <Support>https://github.com/jakezp/unraid-docker-templates</Support>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
-    <Environment>
-      <Variable>
-        <Name>SES ACCESS_KEY</Name>
-        <Value>Your AWS SES Access key</Value>
-      </Variable>
-      <Variable>
-        <Name>SES SECRET_KEY</Name>
-        <Value>Your AWS SES Access secret</Value>
-      </Variable>
-    </Environment>
+    <Environment></Environment>
     <Networking>
       <Mode>bridge</Mode>
     </Networking>
