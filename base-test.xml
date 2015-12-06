@@ -10,7 +10,7 @@
   <Support>https://github.com/jakezp/unraid-docker-templates</Support>
   <Registry>https://hub.docker.com/r/jakezp/base-test/</Registry>
   <GitHub>hhttps://github.com/jakezp/unraid-docker-templates</GitHub>
-  <Repository>joch/s3backup</Repository>
+  <Repository>jakezp/base-test</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
