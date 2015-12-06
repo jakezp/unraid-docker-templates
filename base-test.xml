@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Name>Base-test</Name>
+  <Name>base-test</Name>
   <Description>
     Base image used for testing
   </Description>
   <Overview>
     Base image used for testing
   </Overview>
-  <Support>https://github.com/jakezp/unraid-docker-templates</Support>
+  <Support>www.jakezp.co.za</Support>
   <Registry>https://registry.hub.docker.com/u/jakezp/base-test/</Registry>
   <GitHub>https://github.com/jakezp/unraid-docker-templates</GitHub>
   <Repository>jakezp/base-test</Repository>
