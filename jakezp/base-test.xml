@@ -9,7 +9,7 @@
   </Overview>
   <Support>https://github.com/jakezp/unraid-docker-templates</Support>
   <Registry>https://registry.hub.docker.com/u/jakezp/base-test/</Registry>
-  <GitHub>https://github.com/jakezp/unraid-docker-templates</GitHub>
+  <GitHub>https://github.com/jakezp/base-test</GitHub>
   <Repository>jakezp/base-test</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -30,8 +30,8 @@
   </Data>
   <Banner></Banner>
   <Icon>http://icons.iconarchive.com/icons/aha-soft/security/128/login-icon.png</Icon>
-  <Beta>True</Beta>
-  <Category>Base: Cloud:</Category>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
   <Changes>
     [center][font size=5]Base-test Change Log[/font][/center]
     [font size=4]2015-12-06[/font]
