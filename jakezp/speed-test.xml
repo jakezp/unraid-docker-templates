@@ -13,6 +13,9 @@
     - ACCESS_KEY - your AWS access key[br]
     - SECRET_KEY - your AWS secret key[br]
     - EMAIL - The email address to send the report, eg. name@host.com[br]
+    - SERVER - The mail server to be used to send notifications
+    - PORT - The server port (25, 467, 587)
+    - ROUTER - Mikrotik router IP address
     - CRON_SCHEDULE - Customize how often the speedtest is executed (default: hourly), "0 3 0 0 0" for once every night[br][br]
   </Description>
     <Registry>https://registry.hub.docker.com/u/jakezp/speed-test/</Registry>
