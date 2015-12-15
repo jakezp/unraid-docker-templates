@@ -2,7 +2,7 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Downloaders:</Category>
-    <Name>Base-test</Name>
+    <Name>Speedtest</Name>
     <Overview>
       Automatically execute speedtest.net tests
     </Overview>
