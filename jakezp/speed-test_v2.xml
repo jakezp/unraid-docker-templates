@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+    <Name>Speedtest v2</Name>
+    <Overview>
+      Automatically execute speedtest.net tests
+    </Overview>
+    <Description>
+    Automatically execute speedtest.net tests[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    You [span style='color: #E80000;']must[/span] set the correct envionment variables for the container. Click on "Advanced view" in the top right and fill in the filelds[br]
+    - ACCESS_KEY - your AWS access key[br]
+    - SECRET_KEY - your AWS secret key[br]
+    - EMAIL - The email address to send the report, eg. name@host.com[br]
+    - SERVER - The mail server to be used to send notifications
+    - PORT - The server port (25, 467, 587)
+    - ROUTER - Mikrotik router IP address
+    - CRON_SCHEDULE - Customize how often the speedtest is executed (default: hourly), "0 3 0 0 0" for once every night[br][br]
+  </Description>
+    <Registry>https://registry.hub.docker.com/u/jakezp/speed-test_v2/</Registry>
+    <GitHub>https://github.com/jakezp/speed-test_v2</GitHub>
+    <Repository>jakezp/speed-test_v2</Repository>
+    <Support>https://github.com/jakezp/unraid-docker-templates</Support>
+    <BindTime>true</BindTime>
+    <Privileged>false</Privileged>
+    <Environment>
+    <Variable>
+      <Name>ACCESS_KEY</Name>
+      <Value>Your AWS Access key</Value>
+    </Variable>
+    <Variable>
+      <Name>SECRET_KEY</Name>
+      <Value>Your AWS Access secret</Value>
+    </Variable>
+    <Variable>
+      <Name>EMAIL</Name>
+      <Value>name@host.com</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVER</Name>
+      <Value>email-smtp.eu-west-1.amazonaws.com</Value>
+    </Variable>
+    <Variable>
+      <Name>PORT</Name>
+      <Value>587</Value>
+    </Variable>
+    <Variable>
+      <Name>ROUTER</Name>
+      <Value>192.168.88.1</Value>
+    </Variable>
+    <Variable>
+      <Name>CRON_SCHEDULE</Name>
+      <Value>0 * * * *</Value>
+    </Variable>
+  </Environment>
+    <Networking>
+      <Mode>bridge</Mode>
+    </Networking>
+    <Data>
+    </Data>
+    <Banner></Banner>
+    <Icon>http://icons.iconarchive.com/icons/aha-soft/security/128/login-icon.png</Icon>
+    <Changes>
+      [center][font size=5]Speedtest Change Log[/font][/center]
+      [font size=4]2015-12-15[/font]
+      - Initial Release
+    </Changes>
+    <Date>2015-12-15</Date>
+</Containers>
