@@ -14,7 +14,6 @@
     - SECRET_KEY - your AWS secret key[br]
     - EMAIL - The email address to send the report, eg. name@host.com[br]
     - CRON_SCHEDULE - Customize how often the speedtest is executed (default: hourly), "0 3 0 0 0" for once every night[br][br]
-    You can create a lifecycle policy within the S3 bucket which automatically archives the files to Glacier, which is a lot cheaper than S3 for long-term backups.[br][br]
   </Description>
     <Registry>https://registry.hub.docker.com/u/jakezp/speed-test/</Registry>
     <GitHub>https://github.com/jakezp/speed-test</GitHub>
