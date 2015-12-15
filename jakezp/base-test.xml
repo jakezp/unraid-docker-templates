@@ -17,7 +17,7 @@
     You can create a lifecycle policy within the S3 bucket which automatically archives the files to Glacier, which is a lot cheaper than S3 for long-term backups.[br][br]
   </Description>
     <Registry>https://registry.hub.docker.com/u/jakezp/speed-test/</Registry>
-    <GitHub>https://github.com/jakezp/base-test</GitHub>
+    <GitHub>https://github.com/jakezp/speed-test</GitHub>
     <Repository>jakezp/speed-test</Repository>
     <Support>https://github.com/jakezp/unraid-docker-templates</Support>
     <BindTime>true</BindTime>
