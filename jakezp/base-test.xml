@@ -18,7 +18,7 @@
   </Description>
     <Registry>https://registry.hub.docker.com/u/jakezp/speed-test/</Registry>
     <GitHub>https://github.com/jakezp/base-test</GitHub>
-    <Repository>jakezp/base-test</Repository>
+    <Repository>jakezp/speed-test</Repository>
     <Support>https://github.com/jakezp/unraid-docker-templates</Support>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
