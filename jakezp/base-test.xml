@@ -4,18 +4,42 @@
   <Category>Downloaders:</Category>
     <Name>Base-test</Name>
     <Overview>
-      Base image used for testing
+      Automatically execute speedtest.net tests
     </Overview>
     <Description>
-      Base image used for testing
-    </Description>
+    Automatically execute speedtest.net tests[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    You [span style='color: #E80000;']must[/span] set the correct envionment variables for the container. Click on "Advanced view" in the top right and fill in the filelds[br]
+    - ACCESS_KEY - your AWS access key[br]
+    - SECRET_KEY - your AWS secret key[br]
+    - EMAIL - The email address to send the report, eg. name@host.com[br]
+    - CRON_SCHEDULE - Customize how often the speedtest is executed (default: hourly), "0 3 0 0 0" for once every night[br][br]
+    You can create a lifecycle policy within the S3 bucket which automatically archives the files to Glacier, which is a lot cheaper than S3 for long-term backups.[br][br]
+  </Description>
     <Registry>https://registry.hub.docker.com/u/jakezp/base-test/</Registry>
     <GitHub>https://github.com/jakezp/base-test</GitHub>
     <Repository>jakezp/base-test</Repository>
     <Support>https://github.com/jakezp/unraid-docker-templates</Support>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
-    <Environment></Environment>
+    <Environment>
+    <Variable>
+      <Name>ACCESS_KEY</Name>
+      <Value>Your AWS Access key</Value>
+    </Variable>
+    <Variable>
+      <Name>SECRET_KEY</Name>
+      <Value>Your AWS Access secret</Value>
+    </Variable>
+    <Variable>
+      <Name>EMAIL</Name>
+      <Value>name@host.com</Value>
+    </Variable>
+    <Variable>
+      <Name>CRON_SCHEDULE</Name>
+      <Value>0 * * * *</Value>
+    </Variable>
+  </Environment>
     <Networking>
       <Mode>bridge</Mode>
     </Networking>
@@ -24,9 +48,11 @@
     <Banner></Banner>
     <Icon>http://icons.iconarchive.com/icons/aha-soft/security/128/login-icon.png</Icon>
     <Changes>
-      [center][font size=5]Base-test Change Log[/font][/center]
+      [center][font size=5]Speedtest Change Log[/font][/center]
+      [font size=4]2015-12-15[/font]
+      - Added additional configurations
       [font size=4]2015-12-06[/font]
       - Initial release
     </Changes>
-    <Date>2015-12-06</Date>
+    <Date>2015-12-15</Date>
 </Containers>
