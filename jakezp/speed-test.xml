@@ -36,6 +36,14 @@
       <Value>name@host.com</Value>
     </Variable>
     <Variable>
+      <Name>SERVER</Name>
+      <Value>email-smtp.eu-west-1.amazonaws.com</Value>
+    </Variable>
+    <Variable>
+      <Name>PORT</Name>
+      <Value>587</Value>
+    </Variable>
+    <Variable>
       <Name>CRON_SCHEDULE</Name>
       <Value>0 * * * *</Value>
     </Variable>
@@ -51,6 +59,7 @@
       [center][font size=5]Speedtest Change Log[/font][/center]
       [font size=4]2015-12-15[/font]
       - Added additional configurations
+      - Added SERVER and PORT variables
       [font size=4]2015-12-06[/font]
       - Initial release
     </Changes>
