@@ -43,6 +43,10 @@
       <Value>587</Value>
     </Variable>
     <Variable>
+      <Name>ROUTER</Name>
+      <Value>192.168.88.1</Value>
+    </Variable>
+    <Variable>
       <Name>CRON_SCHEDULE</Name>
       <Value>0 * * * *</Value>
     </Variable>
