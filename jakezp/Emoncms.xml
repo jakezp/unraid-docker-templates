@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Emoncms</Name>
+  <Name>Emoncms (Custom)</Name>
   <Beta>False</Beta>
   <Category>Productivity:</Category>
-  <Date>2016-05-27</Date>
+  <Date>2018-08-16</Date>
   <Support>http://www.google.com</Support>
   <Overview>Energy monitor</Overview>
   <Description></Description>
@@ -18,15 +18,15 @@
     </Variable>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>br0</Mode>
 	<Publish>
 	  <Port>
-        <HostPort>8998</HostPort>
+        <HostPort>80</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
 	  <Port>
-        <HostPort>3307</HostPort>
+        <HostPort>3306</HostPort>
         <ContainerPort>3306</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -34,37 +34,37 @@
   </Networking>
   <Data>
 	<Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/emoncms/etc/mysql</HostDir>
       <ContainerDir>/etc/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/emoncms/var/lib/mysql</HostDir>
       <ContainerDir>/var/lib/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/emoncms/var/lib/phpfiwa</HostDir>
       <ContainerDir>/var/lib/phpfiwa</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/emoncms/var/lib/phpfina</HostDir>
       <ContainerDir>/var/lib/phpfina</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/emoncms/var/lib/phptimeseries</HostDir>
       <ContainerDir>/var/lib/phptimeseries</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/emoncms/var/www/html</HostDir>
       <ContainerDir>/var/www/html</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8998]/</WebUI>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>http://emoncms.org/Modules/site/emoncms_front.png</Banner>
   <Icon>http://emoncms.org/Modules/site/emoncms_front.png</Icon>
 </Container>
