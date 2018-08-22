@@ -17,20 +17,20 @@
       <Value>emoncms</Value>
     </Variable>
   </Environment>
-  <Networking>
+    <Networking>
     <Mode>br0</Mode>
-	<Publish>
-	  <Port>
+      <Publish>
+      <Port>
         <HostPort>80</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-	  <Port>
+	<Port>
         <HostPort>3306</HostPort>
         <ContainerPort>3306</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-    </Publish>
+   </Publish>
   </Networking>
   <Data>
 	<Volume>
