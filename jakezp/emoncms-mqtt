@@ -8,7 +8,7 @@
   <Overview>Energy monitor</Overview>
   <Description>Emoncms with MQTT support enabled</Description>
   <Registry>https://registry.hub.docker.com/r/jakezp/emoncms-mqtt</Registry>
-  <Repository>jakezp/emoncms</Repository>
+  <Repository>jakezp/emoncms-mqtt</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
