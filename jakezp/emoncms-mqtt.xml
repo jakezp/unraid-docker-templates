@@ -22,8 +22,8 @@
     </Variable>
   </Environment>
   <Networking>
-    <Publish>
-      <Mode>br0</Mode>
+    <Mode>br0</Mode>
+    <Publish>  
       <Port>
         <HostPort>80</HostPort>
         <ContainerPort>80</ContainerPort>
