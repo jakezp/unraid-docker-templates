@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>iperf-speedtest</Name>
+  <Repository>jakezp/iperf-speedtest</Repository>
+  <Registry>https://registry.hub.docker.com/r/jakezp/iperf-speedtest</Registry>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>iperf-speedtest</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.linuxjournal.com/sites/default/files/styles/1700x1000/public/nodeimage/story/bash-icon_0.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1540458514</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>iperf-speedtest</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/iperf-speedtest/cron</HostDir>
+      <ContainerDir>/var/spool/cron/cronjobs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="cron" Target="/var/spool/cron/cronjobs" Default="/mnt/user/appdata/iperf-speedtest/cron" Mode="rw" Description="Container Path: /var/spool/cron/cronjobs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/iperf-speedtest/cron</Config>
+</Container>
