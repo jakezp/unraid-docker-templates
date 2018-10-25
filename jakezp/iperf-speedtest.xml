@@ -25,5 +25,5 @@
   </Networking>
   <Environment/>
   <Labels/>
-  <Config Name="cron" Target="/var/spool/cron/crontabs" Default="/mnt/user/appdata/iperf-speedtest/cron" Mode="rw" Description="Container Path: /var/spool/cron/cronjobs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/iperf-speedtest/cron</Config>
+  <Config Name="cron" Target="/var/spool/cron/crontabs" Default="/mnt/user/appdata/iperf-speedtest/cron" Mode="rw" Description="Container Path: /var/spool/cron/crontabs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/iperf-speedtest/cron</Config>
 </Container>
