@@ -2,12 +2,20 @@
 <Container>
   <Name>home-assistant</Name>
   <Beta>False</Beta>
-  <Category>Productivity:</Category>
+  <Category>HomeAutomation:</Category>
   <Date>2018-11-15</Date>
+  <Overview>Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.</Overview>
+  <license>Apache-2</license>
+  <Project>https://home-assistant.io</Project>
   <Support>https://home-assistant.io/help/</Support>
-    <Overview>Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.</Overview>
-  <Description>Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.</Description>
+  <Description>
+    Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.[br][br]
+    Home Assistant will run its dashboard on port 8123.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : in this path, Home Assistant will store it's configuration files.
+  </Description>
   <Registry>https://registry.hub.docker.com/u/homeassistant/home-assistant/</Registry>
+  <GitHub>https://github.com/home-assistant/docker-home-assistant</GitHub>
   <Repository>homeassistant/home-assistant</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -21,7 +29,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/balloob/unraid-docker-templates/master/balloob/home-assistant-icon.png</Banner>
-  <Icon>https://raw.githubusercontent.com/balloob/unraid-docker-templates/master/balloob/home-assistant-icon.png</Icon>
+  <WebUI>http://[IP]:[PORT:8123]</WebUI>
+  <Banner>https://raw.githubusercontent.com/jakezp/unraid-docker-templates/master/jakezp/home-assistant-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/jakezp/unraid-docker-templates/master/jakezp/home-assistant-icon.png</Icon>
 </Container>
