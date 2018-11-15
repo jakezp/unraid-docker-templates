@@ -12,7 +12,7 @@
     Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.[br][br]
     Home Assistant will run its dashboard on port 8123.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]Fixed IP address[/b] : Fixed IP address. If you require host networking, switch to advanced view.
+    [b]Fixed IP address[/b] : Fixed IP address. If you require host networking, switch to advanced view.[br]
     [b]/config[/b] : Home Assistant config directory.
   </Description>
   <Registry>https://registry.hub.docker.com/u/homeassistant/home-assistant/</Registry>
