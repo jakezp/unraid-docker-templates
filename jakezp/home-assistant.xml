@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>-base</Name>
+  <Name>home-assistant</Name>
   <Beta>False</Beta>
-  <Category>Automation</Category>
+  <Category>Productivity:</Category>
   <Date>2018-11-15</Date>
-  <Support>https://www.home-assistant.io/help/</Support>
-  <Overview>Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.</Overview>
+  <Support>https://home-assistant.io/help/</Support>
+    <Overview>Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.</Overview>
   <Description>Home Assistant is a home automation platform written in Python 3. Track and control all devices at home and automate control.</Description>
   <Registry>https://registry.hub.docker.com/u/homeassistant/home-assistant/</Registry>
   <Repository>homeassistant/home-assistant</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment>
   <Networking>
     <Mode>br0</Mode>
-    <MyIP>1.1.1.1</MyIP>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/home-assistant</HostDir>
+      <HostDir>/mnt/user/appdata/home-assistant/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/balloob/unraid-docker-templates/master/balloob/home-assistant-icon.png</Banner>
   <Icon>https://raw.githubusercontent.com/balloob/unraid-docker-templates/master/balloob/home-assistant-icon.png</Icon>
 </Container>
