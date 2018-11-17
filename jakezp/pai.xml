@@ -8,18 +8,18 @@
   <Project>https://github.com/jpbarraca/pai</Project>
   <Support>https://github.com/jpbarraca/pai</Support>
   <Description>
-    Paradox Alarm Interface for Magellan created by jpbarraca (https://github.com/jpbarraca/pai) seems like it might work for me. I still need to purchase a Paradox IP150 unit to continue with the configuration and test if it will actually work for my usecase. 
+    Paradox Alarm Interface for Magellan created by jpbarraca (https://github.com/jpbarraca/pai) seems like it might work for me. I still need to purchase a Paradox IP150 unit to continue with the configuration and test if it will actually work for my usecase.[br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]Fixed IP address[/b] : Fixed IP address. If you require host networking, switch to advanced view.[br]
-    [b]IP_CONNECTION_HOST[/b] : IP Module address
-    [b]IP_CONNECTION_PASSWORD[/b] : IP Module password
-    [b]IP_CONNECTION_SITEID[/b] : IF defined, connection will be made through this method (not 100% sure where / if / how this is used)
-    [b]IP_CONNECTION_EMAIL[/b] : Email registered in the site
-    [b]MQTT_HOST[/b] : MQTT hostname or IP - Hostname or address
-    [b]MQTT_USERNAME[/b] : MQTT Username
-    [b]MQTT_PASSWORD[/b] : MQTT Password
-    [b]/root[/b] : PIA is installed in the /root directory.
-    [b]/var/spool/cron/crontab/[/b] : Place any cron jobs in the root file
+    [b]IP_CONNECTION_HOST[/b] : IP Module address.[br]
+    [b]IP_CONNECTION_PASSWORD[/b] : IP Module password.[br]
+    [b]IP_CONNECTION_SITEID[/b] : IF defined, connection will be made through this method (not 100% sure where / if / how this is used).[br]
+    [b]IP_CONNECTION_EMAIL[/b] : Email registered in the site.[br]
+    [b]MQTT_HOST[/b] : MQTT hostname or IP - Hostname or address.[br]
+    [b]MQTT_USERNAME[/b] : MQTT Username.[br]
+    [b]MQTT_PASSWORD[/b] : MQTT Password.[br]
+    [b]/root[/b] : PIA is installed in the /root directory.[br]
+    [b]/var/spool/cron/crontab/[/b] : Place any cron jobs in the root file.[br]
   </Description>
   <Registry>https://hub.docker.com/r/jakezp/pai/</Registry>
   <GitHub>https://github.com/jakezp/pai</GitHub>
