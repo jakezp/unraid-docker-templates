@@ -45,4 +45,5 @@
   <WebUI>http://[IP]:[PORT:8123]</WebUI>
   <Banner>https://raw.githubusercontent.com/jakezp/unraid-docker-templates/master/jakezp/home-assistant-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/jakezp/unraid-docker-templates/master/jakezp/home-assistant-icon.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
 </Container>
