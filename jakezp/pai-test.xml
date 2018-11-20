@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>paitest</Name>
+  <Beta>False</Beta>
+  <Category>HomeAutomation:</Category>
+  <Date>2018-11-20</Date>
+  <Overview>Paradox Alarm Interface for Magellan (created by jpbarraca - https://github.com/jpbarraca/pai) - test</Overview>
+  <Project>https://github.com/jpbarraca/pai</Project>
+  <Support>https://github.com/jpbarraca/pai</Support>
+  <Description>
+    Paradox Alarm Interface for Magellan created by jpbarraca (https://github.com/jpbarraca/pai) test
+  </Description>
+  <Registry>https://hub.docker.com/r/jakezp/paitest/</Registry>
+  <GitHub>https://github.com/jakezp/pai-test</GitHub>
+  <Repository>jakezp/pai-test</Repository>
+  <BindTime>true</BindTime>
+  <Privileged></Privileged>
+  <Networking>
+    <Mode>br0</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pai-test/config</HostDir>
+      <ContainerDir>/opt/paradox/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/paitest/log</HostDir>
+      <ContainerDir>/opt/paradox/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/jakezp/unraid-docker-templates/master/jakezp/paradox-icon.jpg</Icon>
+</Container>
