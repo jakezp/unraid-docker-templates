@@ -3,12 +3,12 @@
   <Name>pai</Name>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
-  <Date>2018-11-17</Date>
-  <Overview>Paradox Alarm Interface for Magellan (created by jpbarraca - https://github.com/jpbarraca/pai) - test image</Overview>
+  <Date>2018-11-22</Date>
+  <Overview>Paradox Alarm Interface for Magellan (created by jpbarraca - https://github.com/jpbarraca/pai)</Overview>
   <Project>https://github.com/jpbarraca/pai</Project>
-  <Support>https://github.com/jpbarraca/pai</Support>
+  <Support>https://github.com/jpbarraca/pai/issues</Support>
   <Description>
-    Paradox Alarm Interface for Magellan created by jpbarraca (https://github.com/jpbarraca/pai) seems like it might work for me. I still need to purchase a Paradox IP150 unit to continue with the configuration and test if it will actually work for my usecase.[br]
+    Paradox Alarm Interface for Magellan created by jpbarraca (https://github.com/jpbarraca/pai). Middleware that aims to connect to a Paradox Alarm panel, exposing the interface for monitoring and control via several technologies. With this interface it is possible to integrate Paradox panels with HomeAssistant, OpenHAB, Homebridge or other domotics system that supports MQTT, as well as several IM methods.[br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]Fixed IP address[/b] : Fixed IP address. If you require host networking, switch to advanced view.[br]
     [b]IP_CONNECTION_HOST[/b] : IP Module address.[br]
@@ -18,7 +18,9 @@
     [b]MQTT_HOST[/b] : MQTT hostname or IP - Hostname or address.[br]
     [b]MQTT_USERNAME[/b] : MQTT Username.[br]
     [b]MQTT_PASSWORD[/b] : MQTT Password.[br]
-    [b]/root[/b] : PIA is installed in the /root directory.[br]
+    [b]PASSWORD[/b] : Panel password. Set to None if no panel password.[br]
+    [b]LOGGING_FILE[/b] : Log file.[br]
+    [b]/opt/paradox[/b] : PIA is installed in the /opt/paradox directory.[br]
     [b]/var/spool/cron/crontab/[/b] : Place any cron jobs in the root file.[br]
   </Description>
   <Registry>https://hub.docker.com/r/jakezp/pai/</Registry>
@@ -33,7 +35,7 @@
     </Variable>
     <Variable>
       <Name>IP_CONNECTION_PASSWORD</Name>
-      <Value>1234</Value>
+      <Value>password</Value>
     </Variable>
     <Variable>
       <Name>IP_CONNECTION_SITEID</Name>
@@ -54,6 +56,14 @@
     <Variable>
       <Name>MQTT_PASSWORD</Name>
       <Value>password</Value>
+    </Variable>
+    <Variable>
+      <Name>PASSWORD</Name>
+      <Value>None</Value>
+    </Variable>
+    <Variable>
+      <Name>LOGGING_FILE</Name>
+      <Value>paradox.log</Value>
     </Variable>
   </Environment>
   <Networking>
