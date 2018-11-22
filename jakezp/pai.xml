@@ -71,8 +71,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/pai/config</HostDir>
-      <ContainerDir>/root</ContainerDir>
+      <HostDir>/mnt/user/appdata/pai/app</HostDir>
+      <ContainerDir>/opt/paradox</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
