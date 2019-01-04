@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>transmission</Name>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Date>2019-01-04</Date>
+  <Overview>ransmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, &#xB5;TP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.</Overview>
+  <Support>https://forums.unraid.net/topic/42352-support-linuxserverio-transmission/</Support>
+  <Project>http://www.transmissionbt.com/</Project>  
+  <Description>Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.[br]
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]/config[/b] : Storing all transmission config files [br]
+  [b]/downloads[/b] : Point to Downloads location[br]
+  [b]/watch[/b] : Point to watch folder[br]
+  </Description>
+  <Registry>https://hub.docker.com/r/linuxserver/transmission/</Registry>
+  <Repository>linuxserver/transmission</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8084</HostPort>
+        <ContainerPort>9091</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+     <Port>
+        <HostPort>51413</HostPort>
+        <ContainerPort>51413</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+   </Publish>
+ </Networking>
+ <Data>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/Torrents/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/Watch/</HostDir>
+      <ContainerDir>/watch</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/Complete/Movies/</HostDir>
+      <ContainerDir>/movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/Complete/TVShows</HostDir>
+      <ContainerDir>/tvshows</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/Complete/Music</HostDir>
+      <ContainerDir>/music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/Complete/TVShows</HostDir>
+      <ContainerDir>/media/Downloads/Complete/TVShows</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/transmission</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8084]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission-icon.png</Icon>
+  </Container>
+ 
