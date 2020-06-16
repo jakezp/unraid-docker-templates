@@ -15,7 +15,7 @@ It supports MG SP EVO panels connected through a serial port, which is present i
 [b]/var/log/pai[/b] : Log file location.[br]
 [b]Port 10000[/b] is required if you want to connect to Panel with Babyware through PAI (PAI will proxy requests).[br]
 [b][span style='color: #E80000;']NB:[/span][/b][br]
-Create default config in /etc/pai. See wiki for more details.</Description>
+Create default config in /etc/pai. See https://github.com/ParadoxAlarmInterface/pai/wiki/Docker for more details.</Description>
   <Banner>https://raw.githubusercontent.com/ParadoxAlarmInterface/pai/master/docs/pai_logo.png</Banner>
   <Icon>https://raw.githubusercontent.com/ParadoxAlarmInterface/pai/master/docs/pai_logo.png</Icon>
   <Registry>https://hub.docker.com/r/paradoxalarminterface/pai/</Registry>
@@ -38,6 +38,16 @@ Create default config in /etc/pai. See wiki for more details.</Description>
     Required="true" 
     Mask="false">/mnt/user/appdata/pai/app</Config>
   <Config 
+    Type="Path"
+    Name="Host Path 2" 
+    Target="/var/log/pai" 
+    Default="/mnt/user/appdata/pai/logs" 
+    Mode="rw" 
+    Description="Container Path: /var/log/pai" 
+    Display="always" 
+    Required="true" 
+    Mask="false">/mnt/user/appdata/pai/logs</Config>
+  <Config 
     Type="Port"
     Name="Host Port 1" 
     Target="10000" 
@@ -48,16 +58,6 @@ Create default config in /etc/pai. See wiki for more details.</Description>
     Required="false" 
     Mask="false">10000</Config>
   <Config 
-    Type="Port"
-    Name="Host Path 2" 
-    Target="/var/log/pai" 
-    Default="/mnt/user/appdata/pai/logs" 
-    Mode="rw" 
-    Description="Container Path: /var/log/pai" 
-    Display="always" 
-    Required="true" 
-    Mask="false">/mnt/user/appdata/pai/logs</Config>
-  <Config 
     Type="Container Variable 1"
     Name="Variable" 
     Target="TZ" 
@@ -66,5 +66,5 @@ Create default config in /etc/pai. See wiki for more details.</Description>
     Description="Container Variable: TZ"  
     Display="always" 
     Required="false" 
-    Mask="false">Africa/Johannesburg</Config>  
+    Mask="false">Africa/Johannesburg</Config>
 </Container>
