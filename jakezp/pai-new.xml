@@ -8,12 +8,7 @@
   <Project>https://github.com/ParadoxAlarmInterface/pai</Project>
   <Support>https://github.com/ParadoxAlarmInterface/pai/issues</Support>
   <Description>
-    Middleware that aims to connect to a Paradox Alarm panel, exposing the interface for monitoring and control via several technologies. With this interface it is possible to integrate Paradox panels with HomeAssistant, OpenHAB, Homebridge or other domotics system that supports MQTT, as well as several IM methods.[br]
-    It supports MG SP EVO panels connected through a serial port, which is present in all panels  TTL 5V , or through a USB 307 module. It also supports connections using the IP150 module, both directly (firmware version < 4.0 or >= 4.40.004), and through the SITE ID (firmware versions >4.0).[br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]Fixed IP address[/b] : Fixed IP address. If you require host networking, switch to advanced view.[br]
-    [b]/etc/pai[/b] : PIA config location.[br]
-    [b]/var/log/pai[/b] : Log file location.[br]
+    Middleware that aims to connect to a Paradox Alarm panel, exposing the interface for monitoring and control via several technologies.
   </Description>
   <Registry>https://hub.docker.com/r/paradoxalarminterface/pai/</Registry>
   <GitHub>https://github.com/ParadoxAlarmInterface/pai</GitHub>
