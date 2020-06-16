@@ -1,34 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>paitest</Name>
+  <Name>pai-new</Name>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
-  <Date>2018-11-20</Date>
-  <Overview>Paradox Alarm Interface for Magellan (created by jpbarraca - https://github.com/jpbarraca/pai) - test</Overview>
-  <Project>https://github.com/jpbarraca/pai</Project>
-  <Support>https://github.com/jpbarraca/pai</Support>
+  <Date>2020-06-16</Date>
+  <Overview>PAI - Paradox Alarm Interface (https://github.com/ParadoxAlarmInterface/pai)</Overview>
+  <Project>https://github.com/ParadoxAlarmInterface/pai</Project>
+  <Support>https://github.com/ParadoxAlarmInterface/pai/issues</Support>
   <Description>
-    Paradox Alarm Interface for Magellan created by jpbarraca (https://github.com/jpbarraca/pai) test
+    Middleware that aims to connect to a Paradox Alarm panel, exposing the interface for monitoring and control via several technologies. With this interface it is possible to integrate Paradox panels with HomeAssistant, OpenHAB, Homebridge or other domotics system that supports MQTT, as well as several IM methods.[br]
+    It supports MG/SP/EVO panels connected through a serial port, which is present in all panels (TTL 5V), or through a USB 307 module. It also supports connections using the IP150 module, both directly (firmware version < 4.0 or >= 4.40.004), and through the SITE ID (firmware versions >4.0).[br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Fixed IP address[/b] : Fixed IP address. If you require host networking, switch to advanced view.[br]
+    [b]/etc/pai[/b] : PIA config location.[br]
+    [b]/var/log/pai[/b] : Log file location.[br]
   </Description>
-  <Registry>https://hub.docker.com/r/jakezp/paitest/</Registry>
-  <GitHub>https://github.com/jakezp/pai-test</GitHub>
-  <Repository>jakezp/pai-test</Repository>
+  <Registry>https://hub.docker.com/r/paradoxalarminterface/pai/</Registry>
+  <GitHub>https://github.com/ParadoxAlarmInterface/pai</GitHub>
+  <Repository>paradoxalarminterface/pai</Repository>
   <BindTime>true</BindTime>
-  <Privileged></Privileged>
+  <Privileged>false</Privileged>
   <Networking>
     <Mode>br0</Mode>
+      <Publish>
+        <Port>
+          <HostPort>10000</HostPort>
+          <ContainerPort>10000</ContainerPort>
+          <Protocol>tcp</Protocol>
+        </Port>
+      </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/pai-test/config</HostDir>
-      <ContainerDir>/opt/paradox/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/pai/app</HostDir>
+      <ContainerDir>/etc/pai</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/paitest/log</HostDir>
-      <ContainerDir>/opt/paradox/log</ContainerDir>
+      <HostDir>/mnt/user/appdata/pai/logs</HostDir>
+      <ContainerDir>/var/log/pai</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Icon>https://raw.githubusercontent.com/jakezp/unraid-docker-templates/master/jakezp/paradox-icon.jpg</Icon>
+  <Environment>
+    <Variable>
+      <Value>Africa/Johannesburg</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  <Banner>https://raw.githubusercontent.com/ParadoxAlarmInterface/pai/master/docs/pai_logo.png</Banner>
+  <Icon>https://raw.githubusercontent.com/ParadoxAlarmInterface/pai/master/docs/pai_logo.png</Icon>
 </Container>
