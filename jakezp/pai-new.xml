@@ -43,6 +43,7 @@
       <Name>TZ</Name>
       <Mode/>
     </Variable>
+  </Environment>
   <Banner>https://raw.githubusercontent.com/ParadoxAlarmInterface/pai/master/docs/pai_logo.png</Banner>
   <Icon>https://raw.githubusercontent.com/ParadoxAlarmInterface/pai/master/docs/pai_logo.png</Icon>
 </Container>
