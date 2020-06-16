@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container>
   <Name>MQTT Admin</Name>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
@@ -17,7 +17,7 @@ https://hub.docker.com/r/dersimn/mqtt-admin[br]&#xD;
 [b]HTTPS Port[/b] : Https port. (Only use if SSL certs are supplied).[br]&#xD;
 [b]HTTPS_REDIRECT_PORT[/b] : Redirect requests http requests to https. (Only use if SSL certs are supplied).</Description>
   <Icon>https://github.com/jakezp/unraid-docker-templates/blob/master/jakezp/img/mqtt_client.png</Icon>
-  <TemplateURL>https://github.com/jakezp/unraid-docker-templates/blob/master/jakezp/mqtt-admin.xml</TemplateURL>
+  <TemplateURL>https://github.com/jakezp/unraid-docker-templates/edit/master/jakezp/mqtt-admin.xml</TemplateURL>
   <Registry>https://hub.docker.com/r/dersimn/mqtt-admin</Registry>
   <Repository>dersimn/mqtt-admin</Repository>
   <BindTime>true</BindTime>
@@ -26,9 +26,8 @@ https://hub.docker.com/r/dersimn/mqtt-admin[br]&#xD;
     <Mode>br0</Mode>
   </Networking>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
+  
   <ExtraParams/>
-  <Networking>
-    <Mode>br0</Mode>
   <Config 
     Type="Variable"
     Name="MQTT Host" 
