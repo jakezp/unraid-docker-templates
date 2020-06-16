@@ -46,6 +46,7 @@ It supports MG SP EVO panels connected through a serial port, which is present i
       <Name>TZ</Name>
       <Mode/>
     </Variable>
+  </Environment>
   <ExtraParams>--user $(id -u):$(id -g) </ExtraParams>
   <Config Name="Host Port 1" Target="10000" Default="10000" Mode="tcp" Description="Container Port: 10000" Type="Port" Display="always" Required="true" Mask="false">10000</Config>
   <Config Name="Host Path 1" Target="/etc/pai" Default="/mnt/user/appdata/pai/app" Mode="rw" Description="Container Path: /etc/pai" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pai/app</Config>
