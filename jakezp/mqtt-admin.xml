@@ -24,7 +24,7 @@ https://hub.docker.com/r/dersimn/mqtt-admin[br]&#xD;
   <Privileged>false</Privileged>
   <Networking>
     <Mode>br0</Mode>
-    <Publish>
+    </Publish>
   </Networking>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <ExtraParams/>
