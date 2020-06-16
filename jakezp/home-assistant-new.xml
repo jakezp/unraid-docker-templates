@@ -8,7 +8,7 @@
   <Project>https://home-assistant.io</Project>
   <Support>https://home-assistant.io/help/</Support>
   <Description>Home Assistant Core is the core of the Home Assistant home automation platform. It focuses on local control and privacy. Track and control all devices at home and automate control.</Description>
-  <TemplateURL></TemplateURL>
+  <TemplateURL>https://github.com/jakezp/unraid-docker-templates/blob/master/jakezp/home-assistant-new.xml</TemplateURL>
   <Icon>https://github.com/jakezp/unraid-docker-templates/blob/master/jakezp/home-assistant-icon.png</Icon>
   <Registry>https://registry.hub.docker.com/r/homeassistant/home-assistant/</Registry>
   <Repository>homeassistant/home-assistant</Repository>
