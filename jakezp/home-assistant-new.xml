@@ -25,12 +25,31 @@
     Type="Path"
     Name="Config Directory" 
     Target="/config" 
-    Default="/mnt/cache/appdata/Home-Assistant-Core" 
+    Default="/mnt/user/appdata/home-assistant" 
     Mode="rw" 
     Description="Home Assistant config path"  
     Display="always" 
     Required="true" 
     Mask="false">/mnt/user/appdata/home-assistant</Config>
+  <Config 
+    Type="Path"
+    Name="Certificate Directory" 
+    Target="/certs" 
+    Default="/mnt/user/appdata/home-assistant-certs" 
+    Mode="rw" Description="HA certs path"
+    Display="always" 
+    Required="false"
+    Mask="false">/mnt/user/appdata/home-assistant-certs</Config>
+  <Config 
+    Type="Port"
+    Name="SSL HA Port" 
+    Target="443" 
+    Default="443" 
+    Mode="tcp" 
+    Description="Container Port: 443"  
+    Display="always" 
+    Required="false" 
+    Mask="false">8123</Config>
   <Config 
     Type="Port"
     Name="Default HA Port" 
