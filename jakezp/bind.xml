@@ -2,7 +2,7 @@
 <Container>
   <Name>Bind 9 DNS</Name>
   <Beta>False</Beta>
-  <Category>Network:</Category>
+  <Category>Network:DNS</Category>
   <Date>2020-06-25</Date>
   <Overview>ISC BIND9 DNS Server (https://www.bind9.net)</Overview>
   <Project>https://github.com/ventz/docker-bind</Project>
@@ -48,7 +48,7 @@
     Description="Container Port: 53 (tcp)"
     Display="always"
     Required="true" 
-    Mask="false">1883</Config>
+    Mask="false">53</Config>
   <Config 
     Type="Port"
     Name="Bind Port 2" 
@@ -58,7 +58,7 @@
     Description="Container Port: 53 (udp)"
     Display="always"
     Required="true" 
-    Mask="false">9001</Config>
+    Mask="false">53</Config>
   <Config 
     Type="Variable"
     Name="Container Variable 1" 
@@ -80,4 +80,3 @@
     Required="false" 
     Mask="false">1.1.1.1</Config>
 </Container>
-
