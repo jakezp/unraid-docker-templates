@@ -42,13 +42,13 @@
   <Config 
     Type="Path"
     Name="MQTT Logs" 
-    Target="/mosquitto/logs" 
-    Default="/mnt/user/appdata/mqtt/logs" 
+    Target="/mosquitto/log" 
+    Default="/mnt/user/appdata/mqtt/log" 
     Mode="rw" 
-    Description="Container Path: /mosquitto/logs" 
+    Description="Container Path: /mosquitto/log" 
     Display="always" 
     Required="true" 
-    Mask="false">/mnt/user/appdata/mqtt/logs</Config>
+    Mask="false">/mnt/user/appdata/mqtt/log</Config>
   <Config 
     Type="Port"
     Name="MQTT Port 1" 
