@@ -1,0 +1,3 @@
+# Old templates... 
+
+Do not use these templates. I only keep them around for reference... Feel free to have a look at my current templates being used - https://github.com/jakezp/unraid-templates/
